@@ -1,0 +1,195 @@
+{
+    "product" :[
+        {
+            "id":1,
+            "image_product": "asset/image/index/ig-products-1.png",
+            "name_product" :"Syltherine",
+            "describe":"Stylish cafe chair",
+            "selling_price":"Rp 2.500.000",
+            "discount":"Rp 3.500.000",
+            "ic_share":"asset/image/index/ic-share.png",
+            "ic_like":"asset/image/index/ic-like.png",
+            "ic_compare":"asset/image/index/ic-compare.png"
+        },
+
+        {
+            "id":2,
+            "image_product": "asset/image/index/ig-products-2.png",
+            "name_product" :"Leviosa",
+            "describe":"Stylish cafe chair",
+            "selling_price":"Rp 2.500.000",
+            "discount":" ",
+            "ic_share":"asset/image/index/ic-share.png",
+            "ic_like":"asset/image/index/ic-like.png",
+            "ic_compare":"asset/image/index/ic-compare.png"
+        },
+
+        {
+            "id":3,
+            "image_product": "asset/image/index/ig-products-3.png",
+            "name_product" :"Lolito",
+            "describe":"Luxury big sofa",
+            "selling_price":"Rp 2.500.000",
+            "discount":"Rp 14.000.000",
+            "ic_share":"asset/image/index/ic-share.png",
+            "ic_like":"asset/image/index/ic-like.png",
+            "ic_compare":"asset/image/index/ic-compare.png"
+        },
+
+        {
+            "id":4,
+            "image_product": "asset/image/index/ig-products-4.png",
+            "name_product" :"Respica",
+            "describe":"Outdoor bar table and stool",
+            "selling_price":"Rp 500.000",
+            "discount":" ",
+            "ic_share":"asset/image/index/ic-share.png",
+            "ic_like":"asset/image/index/ic-like.png",
+            "ic_compare":"asset/image/index/ic-compare.png"
+        },
+
+        {
+            "id":5,
+            "image_product": "asset/image/index/ig-products-1.png",
+            "name_product" :"Syltherine",
+            "describe":"Stylish cafe chair",
+            "selling_price":"Rp 2.500.000",
+            "discount":"Rp 3.500.000",
+            "ic_share":"asset/image/index/ic-share.png",
+            "ic_like":"asset/image/index/ic-like.png",
+            "ic_compare":"asset/image/index/ic-compare.png"
+        },
+
+        {
+            "id":6,
+            "image_product": "asset/image/index/ig-products-2.png",
+            "name_product" :"Leviosa",
+            "describe":"Stylish cafe chair",
+            "selling_price":"Rp 2.500.000",
+            "discount":" ",
+            "ic_share":"asset/image/index/ic-share.png",
+            "ic_like":"asset/image/index/ic-like.png",
+            "ic_compare":"asset/image/index/ic-compare.png"
+        },
+
+        {
+            "id":7,
+            "image_product": "asset/image/index/ig-products-3.png",
+            "name_product" :"Lolito",
+            "describe":"Luxury big sofa",
+            "selling_price":"Rp 2.500.000",
+            "discount":"Rp 14.000.000",
+            "ic_share":"asset/image/index/ic-share.png",
+            "ic_like":"asset/image/index/ic-like.png",
+            "ic_compare":"asset/image/index/ic-compare.png"
+        },
+
+        {
+            "id":8,
+            "image_product": "asset/image/index/ig-products-4.png",
+            "name_product" :"Respica",
+            "describe":"Outdoor bar table and stool",
+            "selling_price":"Rp 500.000",
+            "discount":" ",
+            "ic_share":"asset/image/index/ic-share.png",
+            "ic_like":"asset/image/index/ic-like.png",
+            "ic_compare":"asset/image/index/ic-compare.png"
+        },
+
+        {
+            "id":9,
+            "image_product": "asset/image/index/ig-products-1.png",
+            "name_product" :"Syltherine",
+            "describe":"Stylish cafe chair",
+            "selling_price":"Rp 2.500.000",
+            "discount":"Rp 3.500.000",
+            "ic_share":"asset/image/index/ic-share.png",
+            "ic_like":"asset/image/index/ic-like.png",
+            "ic_compare":"asset/image/index/ic-compare.png"
+        },
+
+        {
+            "id":10,
+            "image_product": "asset/image/index/ig-products-2.png",
+            "name_product" :"Leviosa",
+            "describe":"Stylish cafe chair",
+            "selling_price":"Rp 2.500.000",
+            "discount":" ",
+            "ic_share":"asset/image/index/ic-share.png",
+            "ic_like":"asset/image/index/ic-like.png",
+            "ic_compare":"asset/image/index/ic-compare.png"
+        },
+
+        {
+            "id":11,
+            "image_product": "asset/image/index/ig-products-3.png",
+            "name_product" :"Lolito",
+            "describe":"Luxury big sofa",
+            "selling_price":"Rp 2.500.000",
+            "discount":"Rp 14.000.000",
+            "ic_share":"asset/image/index/ic-share.png",
+            "ic_like":"asset/image/index/ic-like.png",
+            "ic_compare":"asset/image/index/ic-compare.png"
+        },
+
+        {
+            "id":12,
+            "image_product": "asset/image/index/ig-products-4.png",
+            "name_product" :"Respica",
+            "describe":"Outdoor bar table and stool",
+            "selling_price":"Rp 500.000",
+            "discount":" ",
+            "ic_share":"asset/image/index/ic-share.png",
+            "ic_like":"asset/image/index/ic-like.png",
+            "ic_compare":"asset/image/index/ic-compare.png"
+        },
+        {
+            "id":13,
+            "image_product": "asset/image/index/ig-products-1.png",
+            "name_product" :"Syltherine",
+            "describe":"Stylish cafe chair",
+            "selling_price":"Rp 2.500.000",
+            "discount":"Rp 3.500.000",
+            "ic_share":"asset/image/index/ic-share.png",
+            "ic_like":"asset/image/index/ic-like.png",
+            "ic_compare":"asset/image/index/ic-compare.png"
+        },
+
+        {
+            "id":14,
+            "image_product": "asset/image/index/ig-products-2.png",
+            "name_product" :"Leviosa",
+            "describe":"Stylish cafe chair",
+            "selling_price":"Rp 2.500.000",
+            "discount":" ",
+            "ic_share":"asset/image/index/ic-share.png",
+            "ic_like":"asset/image/index/ic-like.png",
+            "ic_compare":"asset/image/index/ic-compare.png"
+        },
+
+        {
+            "id":15,
+            "image_product": "asset/image/index/ig-products-3.png",
+            "name_product" :"Lolito",
+            "describe":"Luxury big sofa",
+            "selling_price":"Rp 2.500.000",
+            "discount":"Rp 14.000.000",
+            "ic_share":"asset/image/index/ic-share.png",
+            "ic_like":"asset/image/index/ic-like.png",
+            "ic_compare":"asset/image/index/ic-compare.png"
+        },
+
+        {
+            "id":16,
+            "image_product": "asset/image/index/ig-products-4.png",
+            "name_product" :"Respica",
+            "describe":"Outdoor bar table and stool",
+            "selling_price":"Rp 500.000",
+            "discount":" ",
+            "ic_share":"asset/image/index/ic-share.png",
+            "ic_like":"asset/image/index/ic-like.png",
+            "ic_compare":"asset/image/index/ic-compare.png"
+        }
+        
+    ]
+}

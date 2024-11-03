@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link href="asset/css/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+
+    <!-- jQuery CDN & Bootstrap JQ-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <Script src="asset/js/cart.js"></Script>
+  </head>
+  <body>
+   
+      <header>
+        <div class="navbar">
+            <a href="index.html"><img src="asset/image/House_logo.png"></a>
+
+            <div class="nar-menu">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="icons-menu">
+                <a href="#"><img src="asset/image/logo_navbar/icons-account.png"></a>
+                <a href="#"><img src="asset/image/logo_navbar/icons_search.png"></a>
+                <a href="#"><img src="asset/image/logo_navbar/icons_heart.png"></a>
+                <a href="#"><img class="outline" src="asset/image/logo_navbar/icons-cart-outlined.png"></a>
+            </div>
+        </div>
+
+    </header>
+    <main>
+      <section class="section-banner">
+        <div class="banner">
+            <div class="group-banner">
+                <div class="heading">Cart</div> 
+                <div class="next">
+                    <a style="font-weight: 600;" href="index.html">Home</a>
+                    <span style="font-weight: 600;">></span>
+                    <a style="font-weight: 400;" href="Cart.html">Cart</a>
+                </div>            
+          </div>
+        </div>
+    </section>
+
+      <div class="box max-w-screen-2xl mx-auto px-12">
+        <div class="mx-4 my-5 flex gap-6">
+          <div class="infomation_cart w-[70%]">
+            <div
+              class="navbar_info flex justify-evenly items-center bg-[#F9F1E7] h-[55px] mx-auto"
+            >
+              <div class="font-medium text-gray-900">Product</div>
+              <div class="font-medium text-gray-900">Price</div>
+              <div class="font-medium text-gray-900">Quantity</div>
+              <div class="font-medium text-gray-900">Subtotal</div>
+            </div>
+            <div class="cart_product mt-[40px] flex items-center">
+              <img src="asset/img/Product_Cart1.png" alt="" />
+              <span class="ml-[40px] text-[#9F9F9F]">Asgaard sofa</span>
+              <span class="ml-[110px] text-[#9F9F9F]">Rs. 250,000.00</span>
+              <input
+                type="number"
+                class="w-[30px] h-[30px] ml-[100px] text-center border border-[#9F9F9F] rounded-md"
+                placeholder="1"
+              />
+              <span class="font-medium text-gray-900 ml-[160px]"
+                >Rs. 250,000.00</span
+              >
+              <i
+                class="fa-solid fa-trash text-bg_addproduct ml-[40px] cursor-pointer"
+              ></i>
+            </div>
+          </div>
+          <div class="Total_Cart w-[30%]">
+            <div class="bg-[#F9F1E7] h-[350px] p-[30px]">
+              <h2 class="text-3xl font-bold text-gray-900 text-center">
+                Cart totals
+              </h2>
+
+              <p class="pt-[50px] text-center">
+                Subtotal
+                <span class="ml-[50px] text-[#9F9F9F]">Rs. 250,000.00</span>
+              </p>
+              <p class="pt-[30px] text-center">
+                Total
+                <span class="ml-[50px] text-bg_addproduct text-xl font-medium"
+                  >Rs. 250,000.00</span
+                >
+              </p>
+              <a href="checkout.html"><button
+                class="w-[160px] border border-gray-900 mt-[30px] py-2 px-6 font-medium mx-[100px] rounded-[15px]"
+              >
+                Check Out
+              </button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="section-feature">
+      <div class="feature">
+          <img src="asset/image/Frame 5.png">
+          <img src="asset/image/Frame 19.png">
+          <img src="asset/image/Frame 2.png">
+          <img src="asset/image/Frame 4.png">
+      </div>
+  </section>
+
+    <section class="section-cart">
+      <div class="heading">
+          <h2>Shopping Cart</h2>
+          <img style="cursor: pointer;" src="asset/image/ic-delete-cart.png" alt="">
+      </div>
+
+
+      <form action="#">
+          <table>
+              
+              <tbody>
+                  <tr>
+                      <td style="display: flex; align-items: center;"><img style="width: 70px;" src="asset/image//img-cart 1.png"></td>
+                      <td style="font-weight: bold;">Asgaard sofa</td>
+                      <td style="color: yellowgreen;">Rp 250,000.000</td>
+                      <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                      <td style="cursor: pointer;"><img src="asset/image/del.png" ></td>
+                  </tr>
+
+                  <tr>
+                      <td style="display: flex; align-items: center;"><img style="width: 70px;" src="asset/image/img-cart 2.png"></td>
+                      <td style="font-weight: bold;">Casaliving Wood</td>
+                      <td style="color: yellowgreen;">Rp 270,000.000</td>
+                      <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                      <td style="cursor: pointer;"><img src="asset/image/del.png" ></td>
+                  </tr>
+              </tbody>
+          </table>
+          <div style="text-align: right;" class="price-total">
+              <p style="font-weight: bold;">Subtotal</p>
+              <p style="font-weight: bold; color: yellowgreen;">Rp. 520,000.000</p>
+          </div>
+          <div class="link">
+              <a href="Cart.html">Cart</a>
+              <a href="checkout.html">Checkout</a>
+              <a href="product-comparison.html">Comparison</a>
+          </div>
+      </form>
+
+  </section>
+
+  <footer>
+    <div class="footer">
+        <div class="info">
+            <div class="intro">
+                <img src="asset/image/House_logo.png">
+                <div class="content">Van Hien University. LHP241INT440703 <br>Group of 4</div>
+            </div>
+            <div class="footer-menu">
+                <div class="links">
+                    <div class="heading">Links</div>
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="help">
+                    <div class="heading">Help</div>
+                    <a href="#">Payment Options</a>
+                    <a href="#">Return</a>
+                    <a href="#">Privacy Policies</a>
+                    <a href="#">Service</a>
+                </div>
+
+                <div class="newsletter">
+                    <div class="heading">Newsletter</div>
+                    <div class="group">
+                        <input name="email" type="email" placeholder="Enter Your Email Address">
+                        <label for="email">SUBSCRIBE</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reserved text-center">
+            Copyright © 2024. Group of 4 members.
+        </div>
+    </div>
+</footer>
+  </body>
+</html>

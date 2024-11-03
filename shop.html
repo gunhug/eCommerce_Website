@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>eCommerce_Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;
+    0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/css/shop.css">
+    <!-- jQuery CDN & Bootstrap JQ-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <Script src="asset/js/shop.js"></Script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html"><img src="asset/image/House_logo.png"></a>
+
+            <div class="nar-menu">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="icons-menu">
+                <a href="#"><img src="asset/image/logo_navbar/icons-account.png"></a>
+                <a href="#"><img src="asset/image/logo_navbar/icons_search.png"></a>
+                <a href="#"><img src="asset/image/logo_navbar/icons_heart.png"></a>
+                <a href="#"><img class="outline" src="asset/image/logo_navbar/icons-cart-outlined.png"></a>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="section-banner">
+        <div class="banner">
+            <div class="group-banner">
+                <div class="heading">Shop</div> 
+                <div class="next">
+                    <a style="font-weight: 600;" href="index.html">Home</a>
+                    <span style="font-weight: 600;">></span>
+                    <a href="shop.html">Shop</a>
+                </div>            
+          </div>
+        </div>
+    </section>
+
+    <section class="show-results">
+        <div class="container">
+            <div class="filter">
+                <img src="asset/image/img-shop/ic-filter.png" >
+                <div class="text">Filter</div>
+            </div>
+            <img src="asset/image/img-shop/ci_grid-big-round.png" >
+            <img src="asset/image/img-shop/ic-view-list.png">
+            <div class="show">Showing 1-16 of 21 results</div>
+        </div>
+
+        <div class="show-short">
+            <div class="show group">
+                <label for="show">Show</label>
+                <input type="number" placeholder="16">
+            </div>
+            <div class="short group">
+                <label for="short">Short by</label>
+                <input type="text" placeholder="Default">
+            </div>
+            <button type="button" class="btn btn-primary"><i class='bx bx-search'></i>Search</button>
+
+        </div>
+    </section>
+
+    <section class="section-products">
+        <div>
+        <div class="group-products" id="group-products">
+            <!-- many products -->
+       </div>
+       <div class="pagination">
+           <div class="page active">1</div>
+           <div class="page">2</div>
+           <div class="page">3</div>
+           <div class="page">Next</div>
+       </div>
+       </div>
+    </section>
+
+    <section class="section-cart">
+        <div class="heading">
+            <h2>Shopping Cart</h2>
+            <img style="cursor: pointer;" src="asset/image/ic-delete-cart.png" alt="">
+        </div>
+
+
+        <form action="#">
+            <table>
+                
+                <tbody>
+                    <tr>
+                        <td style="display: flex; align-items: center;"><img style="width: 70px;" src="asset/image//img-cart 1.png"></td>
+                        <td style="font-weight: bold;">Asgaard sofa</td>
+                        <td style="color: yellowgreen;">Rp 250,000.000</td>
+                        <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer;"><img src="asset/image/del.png" ></td>
+                    </tr>
+
+                    <tr>
+                        <td style="display: flex; align-items: center;"><img style="width: 70px;" src="asset/image/img-cart 2.png"></td>
+                        <td style="font-weight: bold;">Casaliving Wood</td>
+                        <td style="color: yellowgreen;">Rp 270,000.000</td>
+                        <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer;"><img src="asset/image/del.png" ></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="text-align: right;" class="price-total">
+                <p style="font-weight: bold;">Subtotal</p>
+                <p style="font-weight: bold; color: yellowgreen;">Rp. 520,000.000</p>
+            </div>
+            <div class="link">
+                <a href="Cart.html">Cart</a>
+                <a href="checkout.html">Checkout</a>
+                <a href="product-comparison.html">Comparison</a>
+            </div>
+        </form>
+
+    </section>
+
+    <section class="section-feature">
+        <div class="feature">
+            <img src="asset/image/Frame 5.png">
+            <img src="asset/image/Frame 19.png">
+            <img src="asset/image/Frame 2.png">
+            <img src="asset/image/Frame 4.png">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="info">
+                <div class="intro">
+                    <img src="asset/image/House_logo.png">
+                    <div class="content">Van Hien University. LHP241INT440703 <br>Group of 4</div>
+                </div>
+                <div class="footer-menu">
+                    <div class="links">
+                        <div class="heading">Links</div>
+                        <a href="index.html">Home</a>
+                        <a href="shop.html">Shop</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+
+                    <div class="help">
+                        <div class="heading">Help</div>
+                        <a href="#">Payment Options</a>
+                        <a href="#">Return</a>
+                        <a href="#">Privacy Policies</a>
+                        <a href="#">Service</a>
+                    </div>
+
+                    <div class="newsletter">
+                        <div class="heading">Newsletter</div>
+                        <div class="group">
+                            <input name="email" type="email" placeholder="Enter Your Email Address">
+                            <label for="email">SUBSCRIBE</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reserved text-center">
+                Copyright © 2024. Group of 4 members.
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

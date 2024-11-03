@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce_Website</title>
+    <link rel="stylesheet" href="asset/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+    <div class="box">
+        
+
+        <div class="container">
+            <div class="left-side">
+                <img src="asset/image/index/img-dot-10.jpeg">
+            </div>
+
+            <div class="right-side">
+                <div class="box">
+                    <h1>Log in</h1>
+                    <p>Log in to access any of our products</p>
+                    <form id="signupForm">
+                        <div class="font-group">
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" name="email" required>
+                            <span id="emailError" style="color: red;"></span>
+                        </div>
+
+                        <div class="font-group">
+                            <label for="passwordField">Password</label>
+                            <input type="password" id="passwordField" name="passwordField">
+                            <span>Use 8 or more characters with a mix of letters, numbers & symbols</span>
+                            <span id="passwordError" style="color: red;"></span>
+                        </div>
+
+                        <button class="pass-hide">
+                            <img src="asset/img/icon.png" id="toggleIcon">
+                            <div class="text-hide">
+                                <span id="toggleText">Hide</span>
+                            </div>
+                        </button>
+
+                        <div class="check-box">
+                            <input type="checkbox">
+                            <p>Agree to our <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p>
+                        </div>
+
+                        <div class="check-box">
+                            <input type="checkbox">
+                            <p>Subscribe to our monthly newsletter</p>
+                        </div>
+
+                        <div class="checkbox-container">
+                            <div class="checkbox-text">
+                                <input type="checkbox" id="not-robot">
+                                <label for="not-robot">I'm not a robot</label>
+                            </div>
+                            <div class="cap-cha"><img src="asset/img/google_recaptcha-official 2.png"></div>
+                        </div>
+                        
+                        <div class="font-size">
+                            <button id="signupButton" type="submit" class="Create-account">Log in</button>
+                            <p>Don't have an account? <a href="#">Sign up</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<script>
+    
+    document.querySelector('.pass-hide').addEventListener('click', function (e) {
+    e.preventDefault(); 
+
+    const passwordField = document.getElementById('passwordField');
+    const toggleIcon = document.getElementById('toggleIcon');
+    const toggleText = document.getElementById('toggleText');
+
+    // chuyển đổi hiển thị mật khẩu
+    if (passwordField.getAttribute('type') === 'password') {
+        passwordField.setAttribute('type', 'text'); 
+        toggleIcon.src = 'asset/img/Property 1=See.png';   
+        toggleText.textContent = 'Show';         
+    } else {
+        passwordField.setAttribute('type', 'password');
+        toggleIcon.src = 'asset/img/icon.png';          
+        toggleText.textContent = 'Hide';
+    }
+});
+
+document.getElementById('signupForm').addEventListener('input', function() {
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('passwordField').value;
+    const signupButton = document.getElementById('signupButton');
+    const emailError = document.getElementById('emailError');
+    const passwordError = document.getElementById('passwordError');
+   
+    // Bật nút "Sign up" nếu cả email và mật khẩu đều hợp lệ
+    if (email !=='' && password !=='') {
+        signupButton.disabled = false;
+        signupButton.style.backgroundColor = 'blue'; // Đổi màu nút khi hợp lệ
+    } else {
+        signupButton.disabled = true;
+        signupButton.style.backgroundColor = '#C3C3C3'; // Đổi lại màu nút khi không hợp lệ
+    }
+});
+
+document.getElementById('signupButton').addEventListener('click', function (e) {
+    e.preventDefault(); // Ngăn chặn việc gửi biểu mẫu mặc định
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('passwordField').value;
+
+    const emailValid = validateEmail(email);
+    const passwordValid = validatePassword(password);
+
+    if (emailValid && passwordValid) {
+        window.location.href = 'index.html'; // Điều hướng đến trang thành công
+    } else {
+        // Hiển thị thông báo lỗi nếu email hoặc mật khẩu không hợp lệ
+        if (!emailValid) {
+            alert('Email không hợp lệ');
+        }
+        if (!passwordValid) {
+            alert('Mật khẩu không hợp lệ');
+        }
+
+    }
+});
+
+function validateEmail(email) {
+    // biểu thức chính quy để check email
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+function validatePassword(password) {
+    // // biểu thức chính quy để check password
+    const re = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*#?&]{8,}$/;
+    return re.test(password);
+}
+</script>
+</body>
+</html>
