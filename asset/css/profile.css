@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    background-image: url(../img/bg.png);
+    width: 1440px;
+    height: 953px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.container .login-frame{
+    width: 564px;
+    min-height: 658px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    gap: 50px;
+}
+
+.container .login-frame img{
+    width: 100px;
+    border-radius: 50px;
+}
+
+.container .login-frame .nav{
+    display: flex;
+    gap: 300px;
+}
+
+.container .login-frame .nav .right{
+    display: flex;
+    gap: 30px;
+}
+
+.container .login-frame .nav i{
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.container .box{
+    display: flex;
+    font-size: 21px;
+    gap: 60px;
+}
+
+.container .box .head-box{
+    font-weight: 600;
+}

