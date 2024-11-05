@@ -1437,6 +1437,8 @@ footer{
   background-color: #FFF3E3;
   margin-top: 50px;
   width: 100%;
+
+  
 }
 .footer{
   width: 1440px;
@@ -1484,11 +1486,13 @@ footer{
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 200px;
 }
 .footer .info .footer-menu .help{
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 200px;
 }
 .footer .info .footer-menu .newsletter{
   display: flex;

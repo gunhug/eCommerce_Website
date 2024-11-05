@@ -429,9 +429,10 @@ footer{
   display: flex;
   justify-content: center;
   background-color: var(--background-header-footer);
-  width: 1895px;
   margin-top: 50px;
+  width: 100%;
 
+  
 }
 .footer{
   width: 1440px;
@@ -440,76 +441,80 @@ footer{
   gap: 20px;
 }
 
-.footer .info {
+.footer .info{
   display: flex;
   gap: 160px;
+  padding-left: 50px;
 }
 
-.footer .info .intro {
+.footer .info .intro{
   display: flex;
   flex-direction: column;
   gap: 45px;
 }
 
-.footer .info .intro img {
+.footer .info .intro img{
   width: 170px;
   height: auto;
 }
 
-.footer .info .intro .content {
+.footer .info .intro .content{
   opacity: 0.5;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 
-.footer .info .footer-menu {
+.footer .info .footer-menu{
   display: flex;
   gap: 100px;
 }
 
-.footer .info .footer-menu .heading {
+.footer .info .footer-menu .heading{
   font-weight: 600;
   opacity: 0.5;
   margin-bottom: 25px;
 }
 
-.footer .info .footer-menu .links {
+
+.footer .info .footer-menu .links{
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 200px;
 }
-.footer .info .footer-menu .help {
+.footer .info .footer-menu .help{
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 200px;
 }
-.footer .info .footer-menu .newsletter {
+.footer .info .footer-menu .newsletter{
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.footer .info .footer-menu .newsletter .group {
+.footer .info .footer-menu .newsletter .group{
   display: flex;
   gap: 15px;
 }
 
-.footer .info .footer-menu .newsletter .group input {
+.footer .info .footer-menu .newsletter .group input{
   border: none;
   border-bottom: 3px solid var(--border);
   outline: none;
   background-color: var(--background-header-footer);
 }
 
-.footer .info .footer-menu .newsletter .group label {
+.footer .info .footer-menu .newsletter .group label{
   border-bottom: 3px solid var(--border);
   font-weight: 600;
   cursor: pointer;
 }
 
-.footer .reserved {
-  padding-top: 30px;
-  border-top: 2px solid var(--border);
+.footer .reserved{
+  padding-top: 30px ;
+  border-top: 2px solid var(--border) ;
 }
 
 
